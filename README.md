@@ -1,27 +1,82 @@
-# AngularMyNotes
+# Angular 17 Notes App 📒
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+This project is a modular, modern Notes app built with **Angular 17**, showcasing the latest framework capabilities including **Standalone Components**, **Signals**, and **AuthGuard**.
 
-## Development server
+It serves as both a learning project and a portfolio piece for frontend interviews.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🔗 [View App on GitHub Pages](https://yazhcreations.github.io/angular17-notes/)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ⚙️ Features Used
 
-## Running unit tests
+- ✅ **Angular 17** (latest stable version)
+- ✅ **Standalone Components** (no NgModules)
+- ✅ **Signals** (fine-grained reactivity)
+- ✅ **AuthGuard** (basic route protection)
+- ✅ **SCSS Styling**
+- ✅ **GitHub Pages Deployment** (`angular-cli-ghpages`)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📦 Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/yazhcreations/angular17-notes.git
+cd angular17-notes
+npm install
 
-## Further help
+🔨 Run Locally
+``bash
+npm start
+Visit http://localhost:4200/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+🛡️ Authentication & Routing
+✅ Protected routes using AuthGuard
+
+✅ Basic fake authentication logic
+
+✅ Shows/hides views based on login state
+
+🌟 Angular Signals
+✅ Used for reactivity instead of RxJS
+
+✅ Simple and powerful signal() and computed()
+
+🧱 Standalone Components
+✅ All components are fully standalone
+
+✅ Clean project structure without NgModules
+
+📤 Deploy to GitHub Pages
+```bash
+npm run build && npm run deploy
+Compiles using production config
+
+Deploys from docs/browser/ folder
+
+📁 Project Structure (simplified)
+pgsql
+
+src/
+ ├── app/
+ │   ├── auth/
+ │   │   ├── auth.guard.ts
+ │   │   └── login.component.ts
+ │   ├── notes/
+ │   │   ├── note.component.ts
+ │   │   └── note.model.ts
+ │   ├── signals/
+ │   │   └── state.signal.ts
+ │   └── app.component.ts
+angular.json
+README.md
+👩‍💻 Author
+Made with 💻 and ☕ by Yazh Creations
+
+📄 License
+MIT License © 2025 Yazh Creations

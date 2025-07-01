@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-my-notes",
+           "outputPath": "docs",
+           "baseHref": "/angular17-notes/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

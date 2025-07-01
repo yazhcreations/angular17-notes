@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+a, button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background: #007bff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  margin: 4px;
+}
+
+button:hover, a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .note-list {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

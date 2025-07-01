@@ -1,0 +1,103 @@
+/* === PAGE WRAPPER === */
+.page {
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* === TITLE === */
+.page h2 {
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+/* === ACTION BAR === */
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+
+  a {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, text-decoration 0.3s;
+  }
+
+  /* Primary call-to-action */
+  a:first-child {
+    background-color: #4a90e2;
+    color: #fff;
+
+    &:hover {
+      background-color: #357ab8;
+    }
+  }
+
+  /* Secondary link */
+  a:last-child {
+    background: #e6f0fa;
+    color: #4a90e2;
+
+    &:hover {
+      text-decoration: underline;
+      background: #d3e4f7;
+    }
+  }
+
+  /* Stack buttons on narrow screens */
+  @media (max-width: 480px) {
+    flex-direction: column;
+
+    a {
+      width: 100%;
+    }
+  }
+}
+
+/* === NOTE LIST GRID === */
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/*
+  app-note-card is assumed to be a standalone component with its own styles.
+  We’ll only add a little wrapper polish here.
+*/
+app-note-card {
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.25s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* === EDIT LINK === */
+.note-list > a {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

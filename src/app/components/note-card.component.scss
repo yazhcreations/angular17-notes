@@ -1,0 +1,58 @@
+.note-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Edit link style */
+.note-card + a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #1a73e8;
+  text-decoration: none;
+  margin: -1rem 0 1.5rem 0.25rem;
+  transition: text-decoration 0.2s, color 0.2s;
+
+  &:hover {
+    text-decoration: underline;
+    color: #125ab3;
+  }
+
+  svg {
+    fill: #f25c54;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* If using inside a grid/list */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

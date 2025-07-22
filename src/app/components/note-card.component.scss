@@ -6,6 +6,9 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   font-family: 'Segoe UI', sans-serif;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
 
   h3 {
     margin: 0 0 0.5rem;
@@ -20,11 +23,14 @@
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
+a{
+  float: right;
+}
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   }
+
 }
 
 /* Edit link style */

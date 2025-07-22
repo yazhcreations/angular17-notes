@@ -1,14 +1,16 @@
 <div class="page">
   <h2>My Notes</h2>
   <div class="actions">
-    <a routerLink="/add">➕ Add Note</a>
-    <a routerLink="/login">🔐 Login</a>
+    <a routerLink="/add"><span style="font-size: large;font-weight: bolder;">+</span> Add Note</a>
+    <a routerLink="/login">🔐 Admin Login</a>
   </div>
 
   <div class="note-list">
     @for (note of noteService.notes(); track note.id) {
-      <app-note-card [note]="note"></app-note-card>
-      <a [routerLink]="['/edit', note.id]">✏️ Edit</a>
+      <app-note-card [note]="note">
+       
+      </app-note-card>
+     
     }
   </div>
 </div>

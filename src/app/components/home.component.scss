@@ -1,12 +1,16 @@
 /* === PAGE WRAPPER === */
 .page {
-  max-width: 800px;
-  margin: 5% auto;
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 2rem;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* === TITLE === */
@@ -48,7 +52,7 @@
     color: #4a90e2;
 
     &:hover {
-      text-decoration: underline;
+     
       background: #d3e4f7;
     }
   }
@@ -65,9 +69,9 @@
 
 /* === NOTE LIST GRID === */
 .note-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /*

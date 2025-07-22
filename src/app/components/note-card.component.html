@@ -1,5 +1,9 @@
 
 <div class="note-card">
-  <h3>{{ note.title }}</h3>
+  <div class="left-content">
+ <h3>{{ note.title }}</h3>
   <p>{{ note.content }}</p>
+  </div>
+ 
+    <a [routerLink]="['/edit', note.id]">✏️ Edit</a>
 </div>
